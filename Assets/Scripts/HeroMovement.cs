@@ -21,7 +21,7 @@ public class HeroMovement : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.UpArrow)) {
 
-			rb.AddForce (Vector2.up * 700);
+			rb.AddForce (Vector2.up * 500);
 		}
 	}
 	void resetPosition()
