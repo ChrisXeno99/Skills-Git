@@ -20,20 +20,15 @@ public class Alter : MonoBehaviour {
 
 		if (other.gameObject.tag == "Player") 
 		{
-			Debug.Log("Won game");
-			SceneManager.LoadScene ("Won");
+			if (SceneManager.GetActiveScene().name == "Levels Tutorial") 
+			{
+				Debug.Log ("Won level");
+				SceneManager.LoadScene ("Level2");
+			} else 
+			{
+				Debug.Log ("Won game");
+				SceneManager.LoadScene ("Won");
+			}
 		}
 	}
 }
-//public void OnCollisionEnter2D(Collision2D other){
-
-	//if (other.gameObject.tag == "extraLife") {
-		//lives += 1;
-		//Destroy (other.gameObject);
-	//} else if (other.gameObject.tag == "vulnerable") {
-	//	Destroy (other.gameObject);
-	//	vulnerable = true;
-	//	Debug.Log ("vulnerable = true!");
-	//	StartCoroutine("VulnerableDebuff");
-	//}
-//}

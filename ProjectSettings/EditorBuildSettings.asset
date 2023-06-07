@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Won.unity
     guid: 025d2733ec304c047b068e4dba06360c
+  - enabled: 1
+    path: Assets/Level2.unity
+    guid: c3ae9593c4b95294982bb81d1aaad220
   m_configObjects: {}
