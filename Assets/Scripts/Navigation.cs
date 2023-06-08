@@ -28,7 +28,7 @@ public class Navigation : MonoBehaviour {
 	}
 	public void ClickedButtonB(){
 		Debug.Log ("Button B Clicked!");
-		PlayerPrefs.SetString ("WhichButtonClickedB", "B");
+		PlayerPrefs.SetString ("WhichButtonClicked", "B");
 		SceneManager.LoadScene ("PlayerPrefs");
 
 	}
